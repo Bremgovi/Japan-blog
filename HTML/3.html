@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Intro</title>
+    <link rel="stylesheet" type="text/css" href="../JS/fullpage/fullpage.js" />
+    <link rel="stylesheet" type="text/css" href="../CSS/fullpage.css"/>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <div id="fullpage">
+        <div class="section" data-anchor="section1" id="section1">
+            <h1>Seccion 1</h1>
+        </div>
+
+        <div class="section" data-anchor="section2" id="section2">
+            <div class="slide">
+                <h1>Seccion 2</h1>
+                <h1>slide 1</h1>
+            </div>
+            <div class="slide">
+                <h1>Seccion 2</h1>
+                <h1>slide 2</h1>
+            </div>
+        </div>
+        
+        <div class="section" data-anchor="section3" id="section3">
+            <h1>Seccion 3</h1>
+        </div>
+        <div class="section " data-anchor="section4" id="section4">
+            <div class="intro">
+                <h1>Seccion 4</h1>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../JS/fullpage/fullpage.js"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            sectionsColor: ['#ddd', '#4BBFC3', '#7BAABE', '#435b71'],
+            anchors: ['section1', 'section2', 'section3', 'section4'],
+            controlArrows: false,
+            navigation: true,
+            slidesNavigation: true
+        });
+
+    </script>
+
+</body>
+
+</html>

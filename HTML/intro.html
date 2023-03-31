@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Intro</title>
+    <link rel="stylesheet" type="text/css" href="../JS/fullpage/fullpage.js" />
+    <link rel="stylesheet" type="text/css" href="../CSS/fullpage.css"/>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <div id="fullpage">
+        <div class="section" data-anchor="section1" id="section1ID">
+            <div class="block">
+                <div class="header">
+                    <h1>Conoce Japon! 日本に会いましょう！</h1>
+                    <button type="button" class="next-section">Siguiente</button>
+                </div>
+                <div class="content">
+                    <div class="description">
+                        <p id="text">Japón es un país insular del este de Asia que mezcla tradición y modernidad. Su cultura se caracteriza por su respeto y disciplina, lo que se refleja en sus festivales, artes marciales y gastronomía fresca y variada.<br><br>
+                        Además, Japón cuenta con una naturaleza sorprendente y paisajes espectaculares, desde la majestuosa cumbre del Monte Fuji hasta las playas de Okinawa y los bosques de bambú de Arashiyama. Los jardines zen y parques nacionales son otra muestra de la belleza natural de Japón, donde se pueden observar cerezos en flor, templos antiguos y baños termales al aire libre. En resumen, Japón es un destino que no solo ofrece una cultura rica y fascinante, sino también una naturaleza diversa y hermosa que deleita los sentidos.</p>
+                    </div>
+                    <div class="img-container">
+                        <img src="../Media/img/festival.gif" alt="festival" id="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" data-anchor="section2" id="section2ID">
+            <div class="header">
+                <h1> Conoce aún más sobre Japón! </h1>
+                <font id="boton3"></font>
+            </div>
+        </div>
+        
+        <div class="section" data-anchor="section3" id="section3ID">
+            <div class="header">
+                <h1> Conozcamos el lenguaje! </h1>
+                <button type="button" id="boton2">Vamos!</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../JS/fullpage/fullpage.js"></script>
+    <script src="../JS/script.js"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            //sectionsColor: ['#ddd', '#4BBFC3', '#7BAABE'],
+            anchors: ['section1', 'section2', 'section3'],
+            controlArrows: false,
+            navigation: true,
+            slidesNavigation: true,
+        });
+
+    </script>
+
+</body>
+
+</html>
